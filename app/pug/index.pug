@@ -9,23 +9,98 @@ html(lang="en")
     script(defer="defer" src="main.min.js")
   body 
     header.header
-      .logo Logo
-      nav.nav
-        ul.nav__menu
-          li.nav__menu-item
-            a.nav__menu-link Home          
-          li.nav__menu-item
-            a.nav__menu-link Home 1          
-          li.nav__menu-item Home 2
-            ul.nav__menu-item-dropdown
-              li.nav__menu-dropdown-item
-                a.nav__menu-dropdown-link           
-              li.nav__menu-dropdown-item
-                a.nav__menu-dropdown-link           
-          li.nav__menu-item 
-            a.nav__menu-link Home 3          
-          li.nav__menu-item
-            a.nav__menu-link Contact us
+      .container
+        .header__inner
+          .logo Logo
+          nav.nav
+            ul.nav__menu
+              li.nav__menu-item
+                a.nav__menu-link Home          
+              li.nav__menu-item
+                a.nav__menu-link Home 1          
+              li.nav__menu-item 
+                a.nav__menu-link Home 2
+                ul.nav__menu-dropdown
+                  li.nav__menu-dropdown-item
+                    a(href="#").nav__menu-dropdown-link Home Sub Field 1          
+                  li.nav__menu-dropdown-item
+                    a(href="#").nav__menu-dropdown-link Home Sub Field 2          
+              li.nav__menu-item 
+                a.nav__menu-link Home 3          
+              li.nav__menu-item
+                a.nav__menu-link Contact us
     .wrapper
       main.main
+        section.top-banner
+          .container
+            .top-banner__inner
+              .top-banner__content
+                h2.top-banner__title Lorem Ipsum is simply dummy
+                p.top-banner__desc Lorem Ipsum is simply dummy
+                form.top-banner__register-form
+                  input(placeholder="Insert Your Email").register-form__input
+                  button.register-form__btn Register
+              img.top-banner__image(src="../images/lamp-girl.png", alt="Lamp girl")
+        .list-box
+          .container
+            .list-box__inner
+              ul.list-box__list
+                li.list-box__item
+                  img(src="../images/icons/list-box-1.svg").list-box__item-icon.icon-i
+                  .list-box__item-text
+                    h3.list-box__item-title HEADING 1
+                    p.list-box__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                li.list-box__item
+                  img(src="../images/icons/list-box-2.svg").list-box__item-icon.icon-tornado
+                  .list-box__item-text
+                    h3.list-box__item-title HEADING 2
+                    p.list-box__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                li.list-box__item
+                  img(src="../images/icons/list-box-3.svg").list-box__item-icon.icon-glasses
+                  .list-box__item-text
+                    h3.list-box__item-title HEADING 3
+                    p.list-box__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              img(src="../images/list-box-image.jpg", alt="").list-box__img
+              .list-box__comment
+                p.list-box__comment-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                h5.list-box__comment-name CEO NAME
+                span.list-box__comment-pos President & CEO
+        section.services
+          .container
+            .services__inner
+              .services__header
+                h3.services__header-title our Services
+                p.services__header-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,    
+              .services__items
+                .services__item
+                  .services__item-icon-wrapper
+                    img(src="../images/icons/services-1.svg", alt="").services__item-icon.services__item-icon_upgrade
+                  h4.services__item-title HEADING 5
+                  p.services__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                .services__item
+                  .services__item-icon-wrapper
+                    img(src="../images/icons/services-2.svg", alt="").services__item-icon.services__item-icon_props
+                  h4.services__item-title HEADING 6
+                  p.services__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                .services__item
+                  .services__item-icon-wrapper
+                    img(src="../images/icons/services-3.svg", alt="").services__item-icon.services__item-icon_call
+                  h4.services__item-title HEADING 7
+                  p.services__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                .services__item
+                  .services__item-icon-wrapper
+                    img(src="../images/icons/services-4.svg", alt="").services__item-icon.services__item-icon_embed
+                  h4.services__item-title HEADING 8
+                  p.services__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                .services__item
+                  .services__item-icon-wrapper
+                    img(src="../images/icons/services-5.svg", alt="").services__item-icon.services__item-icon_secure
+                  h4.services__item-title HEADING 9
+                  p.services__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                .services__item
+                  .services__item-icon-wrapper
+                    img(src="../images/icons/services-6.svg", alt="").services__item-icon.services__item-icon_part
+                  h4.services__item-title HEADING 10
+                  p.services__item-desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+
       footer.footer

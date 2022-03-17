@@ -10,24 +10,115 @@
   </head>
   <body> 
     <header class="header">
-      <div class="logo">Logo</div>
-      <nav class="nav">
-        <ul class="nav__menu">
-          <li class="nav__menu-item"><a class="nav__menu-link">Home          </a></li>
-          <li class="nav__menu-item"><a class="nav__menu-link">Home 1          </a></li>
-          <li class="nav__menu-item">Home 2
-            <ul class="nav__menu-item-dropdown">
-              <li class="nav__menu-dropdown-item"><a class="nav__menu-dropdown-link">          </a></li>
-              <li class="nav__menu-dropdown-item"><a class="nav__menu-dropdown-link">          </a></li>
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">Logo</div>
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav__menu-item"><a class="nav__menu-link">Home          </a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link">Home 1          </a></li>
+              <li class="nav__menu-item"> <a class="nav__menu-link">Home 2</a>
+                <ul class="nav__menu-dropdown">
+                  <li class="nav__menu-dropdown-item"><a class="nav__menu-dropdown-link" href="#">Home Sub Field 1          </a></li>
+                  <li class="nav__menu-dropdown-item"><a class="nav__menu-dropdown-link" href="#">Home Sub Field 2          </a></li>
+                </ul>
+              </li>
+              <li class="nav__menu-item"> <a class="nav__menu-link">Home 3          </a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link">Contact us</a></li>
             </ul>
-          </li>
-          <li class="nav__menu-item"> <a class="nav__menu-link">Home 3          </a></li>
-          <li class="nav__menu-item"><a class="nav__menu-link">Contact us</a></li>
-        </ul>
-      </nav>
+          </nav>
+        </div>
+      </div>
     </header>
     <div class="wrapper">
-      <main class="main"></main>
+      <main class="main">
+        <section class="top-banner">
+          <div class="container">
+            <div class="top-banner__inner">
+              <div class="top-banner__content">
+                <h2 class="top-banner__title">Lorem Ipsum is simply dummy</h2>
+                <p class="top-banner__desc">Lorem Ipsum is simply dummy</p>
+                <form class="top-banner__register-form">
+                  <input class="register-form__input" placeholder="Insert Your Email">
+                  <button class="register-form__btn">Register</button>
+                </form>
+              </div><img class="top-banner__image" src="../images/lamp-girl.png" alt="Lamp girl">
+            </div>
+          </div>
+        </section>
+        <div class="list-box">
+          <div class="container">
+            <div class="list-box__inner">
+              <ul class="list-box__list">
+                <li class="list-box__item"><img class="list-box__item-icon icon-i" src="../images/icons/list-box-1.svg">
+                  <div class="list-box__item-text">
+                    <h3 class="list-box__item-title">HEADING 1</h3>
+                    <p class="list-box__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  </div>
+                </li>
+                <li class="list-box__item"><img class="list-box__item-icon icon-tornado" src="../images/icons/list-box-2.svg">
+                  <div class="list-box__item-text">
+                    <h3 class="list-box__item-title">HEADING 2</h3>
+                    <p class="list-box__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  </div>
+                </li>
+                <li class="list-box__item"><img class="list-box__item-icon icon-glasses" src="../images/icons/list-box-3.svg">
+                  <div class="list-box__item-text">
+                    <h3 class="list-box__item-title">HEADING 3</h3>
+                    <p class="list-box__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  </div>
+                </li>
+              </ul><img class="list-box__img" src="../images/list-box-image.jpg" alt="">
+              <div class="list-box__comment">
+                <p class="list-box__comment-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                <h5 class="list-box__comment-name">CEO NAME</h5><span class="list-box__comment-pos">President & CEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="services">
+          <div class="container">
+            <div class="services__inner">
+              <div class="services__header">
+                <h3 class="services__header-title">our Services</h3>
+                <p class="services__header-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,    </p>
+              </div>
+              <div class="services__items">
+                <div class="services__item">
+                  <div class="services__item-icon-wrapper"><img class="services__item-icon services__item-icon_upgrade" src="../images/icons/services-1.svg" alt=""></div>
+                  <h4 class="services__item-title">HEADING 5</h4>
+                  <p class="services__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="services__item">
+                  <div class="services__item-icon-wrapper"><img class="services__item-icon services__item-icon_props" src="../images/icons/services-2.svg" alt=""></div>
+                  <h4 class="services__item-title">HEADING 6</h4>
+                  <p class="services__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="services__item">
+                  <div class="services__item-icon-wrapper"><img class="services__item-icon services__item-icon_call" src="../images/icons/services-3.svg" alt=""></div>
+                  <h4 class="services__item-title">HEADING 7</h4>
+                  <p class="services__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="services__item">
+                  <div class="services__item-icon-wrapper"><img class="services__item-icon services__item-icon_embed" src="../images/icons/services-4.svg" alt=""></div>
+                  <h4 class="services__item-title">HEADING 8</h4>
+                  <p class="services__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="services__item">
+                  <div class="services__item-icon-wrapper"><img class="services__item-icon services__item-icon_secure" src="../images/icons/services-5.svg" alt=""></div>
+                  <h4 class="services__item-title">HEADING 9</h4>
+                  <p class="services__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="services__item">
+                  <div class="services__item-icon-wrapper"><img class="services__item-icon services__item-icon_part" src="../images/icons/services-6.svg" alt=""></div>
+                  <h4 class="services__item-title">HEADING 10</h4>
+                  <p class="services__item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
