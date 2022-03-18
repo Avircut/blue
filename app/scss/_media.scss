@@ -1,3 +1,138 @@
-// @media(max-width: 1900px){
+ @media(max-width: 1900px){
+  .header{
+    .logo{
+      margin-left: 0;
+    }
+    .nav{
+      margin-right: 0;
+    }
+  }
+  .list-box{
+    &__list{
+      margin-left: 0;
+      max-width: 620px;
+    }
+    &__comment{
+      max-width:600px;
+      bottom:-149px;
+      right:-19px;
+    }
+    &__img{
+      max-width: 650px;
+    }
+  }
+  .services{
+    &__inner{
+      max-width: 100%;
+    }
+    &__item{
+      margin:0px 25px 50px 25px;
+    }
+  }
+  .clients{
+    &__items{
+      flex-wrap: wrap;
+    }
+  }
+  .slider{
 
-// }
+    &__item-content{
+      margin-left: 0;
+    }
+  }
+ }
+ @media (max-width:1300px) {
+   .services{
+     &__header-title{
+       margin-right: 10px;
+     }
+   }
+    .list-box{
+      &__inner{
+        flex-wrap: wrap;
+      }
+      &__aside{
+        margin:80px auto;
+      }
+      &__list{
+        margin: 0 auto;
+      }
+      &__img{
+        margin: 0 auto;
+      }
+    }
+    .slider{
+      &__img{
+        max-width:500px;
+      }
+    }
+ }
+ @media (max-width:900px) {
+   .top-banner{
+    &__image{
+      display: none;
+    }
+   }
+   .slider{
+     &__img{
+       display: none !important;
+     }
+     &__item-content{
+       width:100%;
+       margin: 0 auto;
+     }
+   }
+ }
+ @media (max-width:670px) {
+   .list-box{
+     &__comment{
+       max-width: 500px;
+       right:100px;
+      }
+   }
+   .footer{
+     &__social{
+       flex-direction: column;
+       text-align: center;
+     }
+     &__social-text{
+      margin-right: 0;
+      margin-bottom: 10px;
+     }
+   }
+ }
+ @media (max-width:564px) {
+   .header{
+     &__inner{
+       flex-direction: column;
+     }
+   }
+   .list-box{
+     &__comment{
+       right:0;
+       left:0;
+       max-width: 90vw;
+     }
+   }
+   .services{
+     &__header{
+       flex-direction: column;
+     }
+   }
+ }
+ @media (max-width:460px){
+   .top-banner{
+     &__register-form{
+       flex-direction: column;
+     }
+     .register-form__btn{
+       margin-top:20px;
+     }
+   }
+   .form{
+     &__work-form-input-group{
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2,1fr);
+     }
+   }
+ }

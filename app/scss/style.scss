@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     padding-top:57px;
+    flex-wrap: wrap;
     &-dropdown{
       display:none;
       position: absolute;
@@ -47,6 +48,7 @@
     margin-left:86px;
     padding-bottom:30px;
     position: relative;
+    text-align: center;
     &:hover{
       .nav__menu-link+.nav__menu-dropdown{
         display:flex;
@@ -111,6 +113,7 @@
     line-height: 21px;
     background: transparent;
     margin-right:19px;
+    min-width: 200px;
     &::placeholder{
       color:#A9A6A6;
     }
@@ -137,11 +140,16 @@
     max-width:750px;
     margin-left:-18px;
   }
+  &__aside{
+    position: relative;
+  }
   &__item{
     display:flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom:160px;
+    &:not(:last-child){
+      margin-bottom:160px;
+    }
     &-text{
       width:100%;
       display: flex;
@@ -162,9 +170,12 @@
     }
     &-icon{
       padding:16px;
-      border-radius: 50%;
-      background-color: $blue;
-      margin-right:30px;
+      &-wrapper{
+        border-radius: 50%;
+        background-color: $blue;
+        display: inline-block;
+        margin-right:30px;
+      }
       &.icon-i{
         padding:16px;
       }
@@ -180,11 +191,14 @@
     max-width:733px;
     border-radius: 14px;
     margin-top:14px;
+    object-fit: cover;
+    max-height: 900px;
   }
+
   &__comment{
     position: absolute;
-    bottom: -115px;
-    right:-106px;
+    bottom: -190px;
+    right:-80px;
     max-width: 689px;
     padding:28px 35px 47px 52px;
     background-color: $white;
@@ -260,7 +274,7 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   &__item{
     padding:29px 20px 0 20px;
@@ -307,6 +321,242 @@
     }
   }
 }
+.slider{
+  background-color: $white;
+  &__inner{
+    position: relative;
+    padding-bottom:161px;
+  }
+  &__item{
+    display:flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:145px;
+  }
+  &__item-content{
+    margin-left:165px;
+    display: flex;
+    flex-direction: column;
+    margin-top:136px;
+  }
+  &__icon{
+    margin-bottom: 21px;
+    object-fit: cover;
+    &-wrapper{
+      width: 76px;
+      height: 76px;
+      background-color: #F0EEEE;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+  &__title{
+    @extend %title-font;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 14px;
+  }
+  &__desc{
+    max-width: 670px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__img{
+    margin-right: 8px;
+    object-fit: cover;
+    width:57%;
+  }
+  .slick-dots{
+    position: absolute;
+    right:0;
+    top:50%;
+    bottom: 0;
+    align-items: center;
+    button{
+      background-color: #C4C4C4;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      font-size: 0;
+      padding: 0;
+      border:none;
+      cursor: pointer;
+    }
+    .slick-active{
+      button{
+        background-color: $blue;
+      }
+    }
+  }
+}
+.clients{
+  padding-top:190px;
+  padding-bottom: 102px;
+  &__inner{
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title{
+    margin-bottom: 120px;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 43px;
+    color:$black;
+  }
+  &__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item{
+    margin:0 10px;
+    margin-bottom: 20px;
+  }
+}
+.form{
+  background-color: #F0EEEE;
+  padding-top: 185px;
+  padding-bottom: 151px;
+  &__work-form{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__work-form-title{
+    @extend %title-font;
+    color:$blue;
+    font-size: 72px;
+    line-height: 86px;
+    margin-bottom: 90px;
+    &::after{
+      content:'';
+      bottom:0;
+      left:0;
+      right:0;
+      margin:0 auto;
+      margin-top: 26px;
+      width:285px;
+      height:4px;
+      background-color: #282828;
+      display: block;
+    }
+  }
+  &__work-form-dropdown{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #717171;
+    outline: none;
+    color:$blue;
+    background: transparent;
+    padding: 3px 10px 7px;
+    font-family: inherit;
+    margin-bottom: 44px;
+    & option{
+      color:$black;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &__work-form-input-group{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+    margin-bottom:44px;
+  }
+  &__work-form-input{
+    border:none;
+    background: transparent;
+    border-bottom:1px solid #717171;
+    padding: 3px 10px 7px;
+    font-family: inherit;
+    ::placeholder{
+      font-size: 24px;
+      color:#918F8F;
+      line-height: 29px;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &__work-form-area{
+    margin-top:12px;
+    border:none;
+    border-bottom:1px solid #717171;
+    width:100%;
+    background: transparent;
+    resize: vertical;
+    color:#918F8F;
+    margin-bottom: 88px;
+    min-height: 100px;
+    padding: 3px 10px 7px;
+    &:focus{
+      outline: none;
+    }
+  }
+  &__work-form-btn{
+    padding:34px 72px;
+    background-color: $blue;
+    border: none;
+    color:#F0EEEE;
+    font-size: 24px;
+    line-height: 24px;
+    @extend %nexa-font;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+}
+.footer{
+  background-color: $blue;
+  padding-top:70px;
+  padding-bottom: 59px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#F0EEEE;
+    font-size: 24px;
+    line-height: 29px;
+
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+  }
+  &__social-list{
+    display: flex;
+    flex-direction: row;
+  }
+  &__social-text{
+    margin-right: 52px;
+  }
+  &__social-item{
+    margin-right:10px;
+    display: inline-block;
+  }
+  &__social-link{
+    width:26px;
+    height:26px;
+  }
+  &__social-link_facebook{
+    background: url(../images/icons/facebook.svg);
+  }  
+  &__social-link_insta{
+    background: url(../images/icons/insta.svg);
+  }  
+  &__social-link_twitter{
+    background: url(../images/icons/twitter.svg);
+  }  
+  &__social-link_linkedin{
+    background: url(../images/icons/linkedin.svg);
+  }
+}
 .logo{
   @extend %nexa-font;
   font-size: 72px;
@@ -316,6 +566,7 @@
   background-color: $blue;
   color:$white;
   text-transform: uppercase;
+  align-self: flex-start;
   display: inline-block;
 }
 @import 'media';
