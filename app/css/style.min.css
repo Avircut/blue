@@ -384,9 +384,7 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-color: #FFF;
 }
 .header .burger__menu-wrapper_opened {
@@ -1085,6 +1083,10 @@ body {
 }
 
 @media (max-width: 1900px) {
+  .burger__menu-wrapper {
+    display: none;
+  }
+
   .header .logo-link {
     margin-left: 0;
   }
@@ -1186,6 +1188,11 @@ body {
     display: none;
   }
   .header .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .burger__menu-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
