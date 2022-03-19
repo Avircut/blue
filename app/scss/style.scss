@@ -306,7 +306,7 @@
   &__comment{
     position: absolute;
     bottom: -190px;
-    right:-80px;
+    right:-109px;
     max-width: 689px;
     padding:28px 35px 47px 52px;
     background-color: $white;
@@ -461,6 +461,7 @@
       border-radius: 50%;
       display: inline-block;
       align-self: flex-start;
+      margin-bottom: 21px;
     }
   }
   &__icon_upgrade{

@@ -204,6 +204,11 @@
         margin-top:20px;
       }
      }
+    .list-box{
+      &__img{
+        max-width: 90vw;
+      }
+    }
    .slider{
      &__img{
        display: none !important;
@@ -211,11 +216,6 @@
      &__item-content{
        width:100%;
        margin: 0 auto;
-     }
-   }
-   .list-box{
-     &__img{
-       max-width: 90vw;
      }
    }
  }
@@ -243,6 +243,7 @@
        right:0;
        left:0;
        max-width: 90vw;
+       min-width: 300px;
      }
    }
    .services{

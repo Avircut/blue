@@ -613,7 +613,7 @@ body {
 .list-box__comment {
   position: absolute;
   bottom: -190px;
-  right: -80px;
+  right: -109px;
   max-width: 689px;
   padding: 28px 35px 47px 52px;
   background-color: #FFF;
@@ -804,6 +804,7 @@ body {
   display: inline-block;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-bottom: 21px;
 }
 .slider__icon_upgrade {
   padding: 19px 17px 20px;
@@ -1295,16 +1296,16 @@ body {
     margin-top: 20px;
   }
 
+  .list-box__img {
+    max-width: 90vw;
+  }
+
   .slider__img {
     display: none !important;
   }
   .slider__item-content {
     width: 100%;
     margin: 0 auto;
-  }
-
-  .list-box__img {
-    max-width: 90vw;
   }
 }
 @media (max-width: 670px) {
@@ -1329,6 +1330,7 @@ body {
     right: 0;
     left: 0;
     max-width: 90vw;
+    min-width: 300px;
   }
 
   .services__header {
