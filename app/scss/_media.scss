@@ -52,19 +52,35 @@
      &__content{
        margin: 0 auto;
      }
+     &__title{
+       font-size: 48px;
+       line-height: 56px;
+     }
+     &__desc{
+       font-size: 28px;
+       line-height: 32px;
+       margin-bottom: 20px;
+     }
      &__image{
       display: none;
     }
-   }
-   .services{
-     &__header-title{
-       margin-right: 10px;
-     }
    }
     .list-box{
       margin-bottom: 100px;
       &__inner{
         flex-wrap: wrap;
+        padding-top:50px;
+      }
+      &__item-title{
+        font-size: 26px;
+        line-height: 32px;
+      }
+      &__item-desc{
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__item:not(:last-child){
+        margin-bottom: 50px;
       }
       &__aside{
         margin:80px auto;
@@ -75,10 +91,44 @@
       &__img{
         margin: 0 auto;
       }
+      &__comment-text{
+        font-size: 14px;
+        line-height: 18px;
+      }
+      &__comment-name{
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__comment-pos{
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .services{
+      &__header-title{
+        font-size: 48px;
+        line-height: 58px;
+        margin-right: 10px;
+      }
+      &__header-desc{
+        font-size: 18px;
+        line-height: 24px;
+      }
+      &__item{
+        margin:0px 7.5px 25px;
+      }
     }
     .slider{
       &__inner{
         padding-top:50px;
+      }
+      &__title{
+        font-size: 48px;
+        line-height: 56px;
+      }
+      &__desc{
+        font-size: 18px;
+        line-height: 22px;
       }
       &__img{
         max-width:500px;
@@ -97,6 +147,33 @@
         li{
           margin-right: 10px;
         }
+      }
+    }
+    .clients{
+      padding-bottom:50px;
+      &__title{
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+    .form{
+      padding-top:50px;
+      padding-bottom: 50px;
+      &__work-form-title{
+        font-size: 48px;
+        line-height: 56px;
+      }
+      &__work-form-btn{
+        padding:28px 54px;
+      }
+    }
+    .footer{
+      &__inner{
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__social-text{
+        margin-right: 15px;
       }
     }
  }

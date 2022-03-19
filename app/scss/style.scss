@@ -104,7 +104,6 @@
       background-color: $white;
       width:100%;
       flex-direction: column;
-      z-index: 99;
       &-item{
         display: flex;
         justify-content: center;
@@ -130,6 +129,7 @@
         margin-top:50px;
         transition: all .5s ease-in-out;
         display: none;
+        z-index: 99;
         background-color: $white;
         &_opened{
           left:0px;
@@ -340,7 +340,7 @@
   color:$white;
   position: relative;
   padding-bottom: 21px;
-  &::after{
+  &::before{
     content:'';
     position: absolute;
     background-image: url(../images/services-bg.png);
@@ -350,10 +350,9 @@
     height:402px;
     left:-325px;
     top:2px;
-    display: block;
+    z-index: 0;
   }
   &__inner{
-    z-index: 1;
     display: flex;
     padding-top:82px;
     flex-direction: column;
@@ -381,6 +380,7 @@
     }
   }
   &__items{
+    z-index: 99;
     width:100%;
     display:flex;
     flex-direction: row;
@@ -671,9 +671,12 @@
     display: flex;
   }
   &__social-link{
-    width:26px;
-    height:26px;
+
     object-fit: cover;
+  }
+  &__social-icon{
+    width:26px;
+    height:25px;
   }
 }
 .logo{
