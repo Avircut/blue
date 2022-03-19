@@ -45,12 +45,21 @@
   }
  }
  @media (max-width:1300px) {
+   .top-banner{
+     &__content{
+       margin: 0 auto;
+     }
+     &__image{
+      display: none;
+    }
+   }
    .services{
      &__header-title{
        margin-right: 10px;
      }
    }
     .list-box{
+      margin-bottom: 100px;
       &__inner{
         flex-wrap: wrap;
       }
@@ -65,17 +74,53 @@
       }
     }
     .slider{
+      &__inner{
+        padding-top:50px;
+      }
       &__img{
         max-width:500px;
+      }
+      &__item-content{
+        margin-top:0;
+        justify-content: center;
+      }
+      .slick-dots{
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        top:unset;
+        left:0;
+        right:0;
+        li{
+          margin-right: 10px;
+        }
       }
     }
  }
  @media (max-width:900px) {
-   .top-banner{
-    &__image{
-      display: none;
-    }
+   .header{
+     .nav__menu-item:not(.burger){
+       display:none;
+     }
+     .burger{
+       display: flex;
+     }
+     &__inner{
+       flex-wrap: wrap;
+     }
+
    }
+   .top-banner{
+      &__register-form{
+        flex-direction: column;
+      }
+      .register-form__input{
+        width:100%;
+      }
+      .register-form__btn{
+        margin-top:20px;
+      }
+     }
    .slider{
      &__img{
        display: none !important;
@@ -92,12 +137,7 @@
    }
  }
  @media (max-width:670px) {
-   .list-box{
-     &__comment{
-       max-width: 500px;
-       right:100px;
-      }
-   }
+
    .footer{
      &__social{
        flex-direction: column;
@@ -111,8 +151,8 @@
  }
  @media (max-width:564px) {
    .header{
-     &__inner{
-       flex-direction: column;
+     .nav__menu-item{
+       margin:0 auto;
      }
    }
    .list-box{
@@ -129,21 +169,37 @@
    }
  }
  @media (max-width:460px){
+   .header{
+     .logo-link{
+       margin:0 auto;
+     }
+     .nav{
+       width: 100%;
+     }
+     .nav__menu{
+       justify-content: center;
+     }
+     .nav__menu-item{
+       margin: 0 auto;
+     }
+   }
    .logo-link{
      min-width: 280px;
-   }
-   .top-banner{
-     &__register-form{
-       flex-direction: column;
-     }
-     .register-form__btn{
-       margin-top:20px;
-     }
    }
    .form{
      &__work-form-input-group{
        grid-template-columns: 1fr;
        grid-template-rows: repeat(2,1fr);
+     }
+   }
+   .footer{
+     &__inner{
+       flex-wrap: wrap;
+       justify-content: center;
+       text-align: center;
+     }
+     &__copyright{
+       margin-bottom: 20px;
      }
    }
  }
